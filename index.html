@@ -1,60 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/portafolio.css">
-    <title>Hola mundo en Mi repositorio / Portafolio</title>
+    <title>Ejercicio de consolidación M2 / Portafolio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Portafolio</h1>
-        <p>Primer Portafolio web</p>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#educación">Educación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius rem aut praesentium, maiores
-                illo
-                placeat cumque aperiam cum odit dignissimos vel quisquam, hic tenetur illum ex. Laudantium, ducimus
-                fuga.
-            </p>
-            <form action="" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="correo">Correo</label>
-                <input type="email" name="correo" id="correo">
-                <button type="submit">Enviar</button>
-            </form>
-        </footer>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#cartaMi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cartaHa">Habilidades</a></li>
+                    <li class=" nav-item"><a class="nav-link" href="#cartaEx">Intereses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cartaIn">Experiencia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Perfil -->
+    <header class="container">
+        <div>
+            <h4>Hola, mi nombre es</h4>
+            <h1>Nicolás Solís</h1>
+            <p>Posible trainee fullstack python</p>
+        </div>
+        <div class="iconos">
+            <a href="https://www.linkedin.com/in/nicol%C3%A1s-sol%C3%ADs-coll%C3%ADo-9bb910302/" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://github.com/NicolasSolis" target="_blank"><i
+                    class="fa-brands fa-square-github fa-xl"></i></a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h1>Sobre mi</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed incidunt iusto. Sapiente, iure
-                facilis. Id ipsum a quas minima perferendis, qui error enim nemo magni quibusdam veniam suscipit in?</p>
-        </section>
-        <section>
-            <h1>Educación</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corporis unde obcaecati quos, similique
-                itaque, consequatur quasi, soluta quam asperiores non necessitatibus nihil eius! Illum perspiciatis
-                incidunt eius beatae vitae?</p>
-        </section>
-        <section>
-            <h1>Experiencia</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore facere reprehenderit aliquid
-                ducimus similique obcaecati magnam sint? Tempore officiis quod harum alias molestias similique aliquid
-                dolores fugiat aspernatur esse.</p>
+    <h2>Pseudo proyectos (no tengo más)</h2>
+    <!-- Carousel -->
+    <div id="miCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="7500">
 
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" id="carouselTareas">
+                <img src="assets/img/carousel1.PNG" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Comunicar tareas</h5>
+                    <p>Un sistema que permite generar tareas y eliminarlas, lo pongo porque me costó xd</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="carouselMentel">
+                <img src="assets/img/carousel2.PNG" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hola mundo en una slide de carousel</h5>
+                    <p>Una especie de menú de una prestigiosa empresa nacional, Mentel?</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="carouselCajas">
+                <img src="assets/img/carousel3.PNG" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Habían muchas cajas</h5>
+                    <p>Sistema grid de bootstrap comprende mejor las posiciones de containers en general,
+                        pero no se sintió necesario en ese ejercicio.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!-- Cartas (4) -->
+    <main class="container row row-cols-1 row-cols-md-2 g-4" id="cartas">
+        <section class="col">
+            <div class="card h-100" id="cartaMi">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre mí</h5>
+                    <p class="card-text">Soy una persona apasionada por la tecnología e informática en general.
+                        Constantemente busco enfocar todas mis actividades en torno a la creatividad, y desde ella
+                        realizarlas de manera eficiente e innovadora.</p>
+                </div>
+            </div>
+        </section>
+        <section class="col">
+            <div class="card h-100" id="cartaHa">
+                <div class="card-body">
+                    <h5 class="card-title">Habilidades</h5>
+                    <ul class="card-text">
+                        <li>
+                            Capacidad de adaptabilidad a distintas situaciones.
+                        </li>
+                        <li>
+                            Capacidad de retención, organización y análisis de información.
+                        </li>
+                        <li>
+                            Constancia del enfoque
+                            de trabajo en situaciones de estrés.
+                        </li>
+                        <li>
+                            Capacidad de resolución de problemas con eficiencia y de forma innovativa.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="col">
+            <div class="card h-100" id="cartaIn">
+                <div class="card-body">
+                    <h5 class="card-title">Intereses</h5>
+                    <p class="card-text">Diseño este pseudo-portafolio con el propósito de
+                        integrarme mejor al contenido front-end, idealmente lo haría con mayor cantidad de tiempo y de
+                        forma más detallada. Me interesan los videojuegos, especialmente los simuladores de colonia y
+                        sandbox survival (ojalá a final del bootcamp logre jugar Space Engineers apropiadamente).
+                        Últimamente me
+                        está interesando el área de estudio sobre ciberseguridad y nubes, me gusta estudiar, así que me
+                        interesaría continuar estudios.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="col">
+            <div class="card h-100" id="cartaEx">
+                <div class="card-body">
+                    <h5 class="card-title">Experiencia</h5>
+                    <ul class="card-text">
+                        <li>
+                            0
+                        </li>
+                        <li>
+                            Haber trabajado como anfitrión por un tiempo me volvió mejor consumidor.
+                        </li>
+                        <li>
+                            Implementación de distintos formatos de Hello World en lugares que son innecesarios y no
+                            aburrirme
+                        </li>
+                        <li>
+                            En un futuro (volveré a revisar este
+                            portafolio) expondré formalmente experiencias, y obviamente todo lo demás. Es solo que, no
+                            tengo realmente, más allá de
+                            la capacidad de interactuar socialmente o métodos de diseño de investigación cualitativa.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Formulario -->
+    <footer class="container-md form-floating">
+        <form class="row col g-2" id="formularioContacto">
+            <h4>Para un mejor contacto ingrese:</h4>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="nombre" title="Ingrese su nombre o institución" required>
+                <label for="nombre" class="form-label">Nombre</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                    title="Ingrese un correo válido" required>
+                <label for="email" class="form-label">usuario@mail.com</label>
+            </div>
+            <div class="form-floating">
+                <input type="tel" class="form-control" id="telefono" title="Ingrese su número de teléfono"
+                    pattern="((\+|00)?[1-9]{2}|0)[1-9]([0-9]){8}" required>
+                <label for="telefono" class="form-label">Número de teléfono</label>
+            </div>
+            <div class="form-group">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" title="Ingrese su mensaje, en un máximo de 500 caracteres"
+                    name="mensaje" rows="2" maxlength="500" required> </textarea>
+            </div>
+            <div class="validacion">
+                <div class="success" id="success"></div>
+                <!-- Por si acaso -->
+                <div class="fail" id="fail">Por favor escriba datos válidos</div>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-outline-dark" id="btnForm">Enviar</button>
+            </div>
+        </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="assets/js/portafolio.js"></script>
 </body>
 
